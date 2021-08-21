@@ -14,40 +14,47 @@
 <body>
   <header id="header" class="wrapper flexitem">
     <h1 class="site-title"><a href="index.html"><img src="hoshikakehanabilogo.svg" alt="星駆花火大会"></a></h1>
-    <nav>
-      <ul class="flexitem">
-        <li>
-          <a href="#about">
-            <span class="en">About</span>
-            <p>星駆花火大会について</p>
-          </a>
-        </li>
-        <li>
-          <a href="#cruise">
-            <span class="en">Cruise</span>
-            <p>花火クルーズ</p>
-          </a>
-        </li>
-        <li>
-          <a href="#access">
-            <span class="en">Access</span>
-            <p>アクセス</p>
-          </a>
-        </li>
-        <li>
-          <a href="#manners">
-            <span class="en">Manners</span>
-            <p>観覧時のお願い</p>
-          </a>
-        </li>
-        <li>
-          <a href="#tourism">
-            <span class="en">Tourism</span>
-            <p>観光案内</p>
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <!-- <div class="nav-wrapper"> -->
+      <nav class="header-nav">
+        <ul class="flexitem">
+          <li class="nav-item">
+            <a href="#about">
+              <span class="en">About</span>
+              <p>星駆花火大会<span>について</span></p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#cruise">
+              <span class="en">Cruise</span>
+              <p>花火<span>クルーズ</span></p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#access">
+              <span class="en">Access</span>
+              <p>アクセス</p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#manners">
+              <span class="en">Manners</span>
+              <p>観覧時の<span>お願い</span></p>
+            </a>
+          </li>
+          <li>
+            <a href="#tourism">
+              <span class="en">Tourism</span>
+              <p>観光案内</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    <!-- </div> -->
+    <button class="burger-btn">
+      <span class="bar bar-top"></span>
+      <span class="bar bar-mid"></span>
+      <span class="bar bar-bottom"></span>
+    </button>
   </header>
   <main>
     <div id="mainvisual" class="wrapper">
@@ -62,7 +69,7 @@
       </div>
     </div>
     <section id="about">
-      <div class="about-title inner">
+      <div class="img-title inner">
         <p class="section-title-en" >About</p>
         <h2 class="section-title-jp">星駆花火大会について
         </h2>
@@ -101,7 +108,7 @@
       </div>
     </section>
     <section id="cruise">
-      <div class="cruise-title cruise-title-right inner">
+      <div class="img-title title-right inner">
         <p class="section-title-en">Cruise</p>
         <h2 class="section-title-jp">花火クルーズ
         </h2>
@@ -110,12 +117,11 @@
           船上から見る花火は格別です。<br>
           きっと忘れられない夏になりますよ！</p>
       </div>
-      <!-- <div class="cruise-backimg"></div> -->
       <div class="inner">
         <div class="photoarea flexitem">
           <img src="img/cruise2.jpg" alt="水上花火の写真">
-          <p>船上で船上でゆったりと花火を堪能できるクルーズコースをご用意。<br>
-            岡山の名産の桃やマスカットのジュースなど、各種ドリンクもお配りします。</p>
+          <p>船上でゆったりと花火を堪能できるクルーズコースをご用意。<br>
+            岡山の名産の桃やマスカットのジュースなど、<br>各種ドリンクもお配りします。</p>
         </div>
         <div class="contentarea">
           <h3 class="section-subtitle">コース紹介</h3>
@@ -159,14 +165,6 @@
           </h2>
         </div>
       </div>
-      <!-- <div class="img-title">
-        <img src="img/access.jpg" alt="改札の写真">
-        <div class="inner">
-          <p class="section-title-en" >Access</p>
-          <h2 class="section-title-jp">アクセス
-          </h2>
-        </div>
-      </div> -->
       <div class="contentarea inner">
         <div class="access-kasaoka">
           <h3 class="section-subtitle">笠岡までのアクセス</h3>
@@ -184,7 +182,7 @@
         <div class="access-kitagi">
           <h3 class="section-subtitle">北木島へのアクセス</h3>
           <div class="access-kitagi-minatomap">
-            <iframe src="https://www.google.com/maps/d/embed?mid=1GWUeebeolVzyCx9LLDYBVRQRlT6HyLa5" width="640" height="480"></iframe>
+            <iframe src="https://www.google.com/maps/d/embed?mid=1GWUeebeolVzyCx9LLDYBVRQRlT6HyLa5" width="100%" height="480"></iframe>
           </div>
           <p>伏越港から北木島へ、住吉港から北木島へ行く方法があります。<br>
           伏越港から乗船する場合は大福丸フェリーもしくは金風呂丸フェリーに、住吉港から乗船する場合は旅客船をご利用ください。</p>
@@ -309,20 +307,12 @@
     </section>
     <section id="manners">
       <div class="img-title">
-        <div class="inner">
+        <div class="title-right inner">
           <p class="section-title-en" >Manners</p>
           <h2 class="section-title-jp">観覧時のお願い
           </h2>
         </div>
       </div>
-      <!-- <div class="img-title">
-        <img src="img/manners.jpg" alt="改札の写真">
-        <div class="inner">
-          <p class="section-title-en" >Manners</p>
-          <h2 class="section-title-jp">観覧時のお願い
-          </h2>
-        </div>
-      </div> -->
       <div class="contentarea inner">
         <p>星駆花火大会には、毎年たくさんの方にご来場いただいております。<br>
         皆様に安心・安全に楽しんでいただくため、以下の事項をあらかじめご確認くださいませ。</p>
@@ -374,18 +364,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="img-title">
-        <img src="img/attractions.jpg" alt="瀬戸内海の島の写真">
-        <div class="inner">
-          <p class="section-title-en">Tourism</p>
-          <h2 class="section-title-jp">観光案内
-          </h2>
-        </div>
-      </div>
-      <div class="contentarea inner">
-        <p>笠岡市や笠岡諸島の島々の観光情報はこちら</p>
-        <a class="btn btn-tourism" href="index.html">笠岡市観光協会公式ホームページ</a>
-      </div> -->
     </section>
   </main>
   <footer id="footer">
@@ -426,5 +404,10 @@
       <p>Copyright © 星駆花火大会 All Rights Reserved.</p>
     </div>
   </footer>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

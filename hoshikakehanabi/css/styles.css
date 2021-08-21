@@ -10,7 +10,7 @@ body{
   color: #fff;
 }
 
-body,h1,h2,h3,p,ul,dd{
+body,h1,h2,h3,p,ul,dd,button{
   padding: 0;
   margin: 0;
 }
@@ -50,7 +50,7 @@ a{
 }
 
 .section-title-en{
-  font-size: 7.68rem;
+  font-size: 6rem;
   margin-bottom: 15px;
 }
 
@@ -59,7 +59,7 @@ a{
 }
 
 .section-title-jp{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .section-title-jp::before{
@@ -72,20 +72,25 @@ a{
   margin-bottom: 40px;
 }
 
-.site-title img{
-  width: 280px;
+.site-title{
+  width: 200px;
 }
 
+/* .site-title img{
+  width: 200px;
+} */
+
 .photoarea img{
-  width: 55%;
+  width: 50%;
   border: 8px solid #fff;
   border-radius: 30px;
   box-sizing: border-box;
 }
 
 .photoarea p{
-  width: 40%;
+  width: 50%;
   line-height: 3.75;
+  margin-left: 4em;
 }
 
 .btn{
@@ -117,8 +122,8 @@ a{
 }
 
 .loop-wrap{
-  margin-top: 140px;
-  margin-bottom: 200px;
+  margin-top: 80px;
+  margin-bottom: 80px;
   display: flex;
   width: 100vw;
   height: 100%;
@@ -164,6 +169,10 @@ a{
   margin-bottom: 100px;
 }
 
+.title-right{
+  text-align:right;
+}
+
 /******************* ヘッダー ********************/
 #header{
   padding-top: 18px;
@@ -188,15 +197,23 @@ a{
   padding-left: 50px;
 }
 
+#header ul li span{
+  display: inline-block;
+}
+
 #header p{
   font-size: 0.7rem;
+}
+
+.burger-btn{
+  display: none;
 }
 /******************* ヘッダー ********************/
 
 /******************* メインビジュアル ********************/
 #mainvisual{
   position: relative;
-  margin-bottom: 140px;
+  margin-bottom: 80px;
 }
 
 .mainvisual-top img{
@@ -223,15 +240,18 @@ a{
 /******************* About ********************/
 #about{
   padding-top: 100px;
-  /* position: relative; */
-  background-image: url(../img/hanabiokyakusan.jpg);
+}
+
+#about .img-title{
+  background-image: url(../img/about.jpg);
   background-position: center top;
   background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 200px;
 }
 
 .about-title-text{
   margin-top: 170px;
-  margin-bottom: 400px;
   line-height: 3.75;
 }
 
@@ -265,9 +285,9 @@ a{
 #about .contentarea .item p{
   background-color: #FFBC00;
   color: #000;
+  font-weight: bold;
   display: inline-block;
   padding: 2.8em 6.25em;
-  border-radius: 30px;
 }
 
 #about .contentarea .item li span{
@@ -277,33 +297,24 @@ a{
 #about .contentarea > p{
   margin-top: 30px;
 }
-
-.about-backimg{
-  /* height: 100%;
-  position: absolute;
-  top:10px;
-  background-image: url(../img/about1.jpg);
-  background-size: cover; */
-}
 /******************* About ********************/
 
 /******************* Cruise ********************/
 #cruise{
   padding-top: 100px;
-  /* position: relative; */
+}
+
+#cruise .img-title{
   background-image: url(../img/cruise.jpg);
   background-position: center top;
   background-repeat: no-repeat;
-}
-
-#cruise .cruise-title-right{
-  text-align:right;
+  background-size: cover;
+  padding-bottom: 100px;
 }
 
 .cruise-title-text{
   line-height: 3.75;
   margin-top: 100px;
-  margin-bottom: 160px;
 }
 
 #cruise .flexitem{
@@ -311,6 +322,11 @@ a{
   justify-content: space-between;
   flex-direction: row-reverse;
   margin-bottom: 130px;
+}
+
+#cruise .photoarea p{
+  margin-left: 0;
+  margin-right: 3.5em;
 }
 
 .cruise-wrap{
@@ -364,7 +380,7 @@ a{
 }
 
 .cruise-price span{
-  font-size: 2.187rem;
+  font-size: 1.5rem;
   font-weight: bold;
 }
 
@@ -379,7 +395,7 @@ a{
 
 /******************* Access ********************/
 #access{
-  margin-bottom: 146px;
+  margin-bottom: 80px;
 }
 
 #access .img-title{
@@ -388,16 +404,6 @@ a{
   object-fit: cover;
   padding:80px 0px 120px 0px;
 }
-
-/* #access .section-title-en{
-  position: absolute;
-  top:50px;
-}
-
-#access .section-title-jp{
-  position: absolute;
-  top:212px;
-} */
 
 #access .item{
   width: 50%;
@@ -408,7 +414,6 @@ a{
 }
 
 .item-title{
-  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 25px;
 }
@@ -499,7 +504,7 @@ table td{
 
 /******************* Manners ********************/
 #manners{
-  margin-bottom: 146px;
+  margin-bottom: 80px;
 }
 
 #manners .img-title{
@@ -507,19 +512,6 @@ table td{
   background-size: cover;
   object-fit: cover;
   padding:80px 0px 120px 0px;
-}
-
-/* #manners .section-title-en{
-  position: absolute;
-  top:50px;
-}
-
-#manners .section-title-jp{
-  position: absolute;
-  top:212px;
-} */
-
-#manners .img-title{
   margin-bottom: 20px;
 }
 
@@ -534,6 +526,7 @@ table td{
 
 #manners li img{
   width: 60%;
+  margin-bottom: 10px;
 }
 
 #manners li{
@@ -544,6 +537,7 @@ table td{
   padding:2em .3em;
   box-sizing: border-box;
   margin: 10px;
+  line-height: 2;
 }
 /******************* Manners ********************/
 
@@ -559,32 +553,6 @@ table td{
   margin-top: 80px;
   margin-bottom: 40px;
 }
-
-/* #tourism{
-  position: relative;
-  margin-bottom: 146px;
-}
-
-#tourism .section-title-en{
-  position: absolute;
-  top:50px;
-}
-
-#tourism .section-title-jp{
-  position: absolute;
-  top:212px;
-}
-
-#tourism .contentarea{
-  position: absolute;
-  top:392px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-#tourism .contentarea p{
-  margin-bottom: 40px;
-} */
 /******************* Tourism ********************/
 
 /******************* フッター ********************/
@@ -647,3 +615,190 @@ table td{
   margin: 0 15px;
 }
 /******************* フッター ********************/
+
+/******************* SP ********************/
+@media screen and (max-width:900px) {
+
+  .inner{
+    padding: 0 4%;
+  }
+
+  .section-title-en{
+    font-size: 3rem;
+  }
+
+  .section-title-jp{
+    font-size: 1rem;
+  }
+
+  .img-title{
+    margin-bottom: 0;
+  }
+  /******************* ヘッダー********************/
+  #header nav{
+    display: none;
+  }
+  /******************* ヘッダー********************/
+  
+  /******************* ハンバーガーボタン メニュー閉じた時********************/
+  .burger-btn{
+    display: block;
+    width: 40px;
+    position: absolute;
+    top:40px;
+    right:50px;
+    height:30px;
+    cursor: pointer;
+    z-index: 3;
+  }
+
+  button{
+    appearance: none;
+    border: none;
+    background: none;
+  }
+
+  .bar{
+    display: inline-block;
+    height: 2px;
+    width: 35px;
+    background-color: white;
+  }
+
+  .bar-top{
+    position: absolute;
+    top: 0;
+  }
+
+  .bar-mid{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .bar-bottom{
+    position: absolute;
+    bottom: 0;
+  }
+  /******************* ハンバーガーボタン メニュー閉じた時********************/
+
+  /******************* ハンバーガーボタン メニュー開いた時********************/
+  .burger-btn.cross .bar-top{
+    transform: rotate(45deg)translate(10px,10px);
+    transition:transform .3s;
+  }
+
+  .burger-btn.cross .bar-mid{
+    opacity: 0;
+    transition: opacity .3s;
+  }
+
+  .burger-btn.cross .bar-bottom{
+    transform: rotate(-45deg)translate(10px,-10px);
+    transition: transform .3s;
+  }
+  /******************* ハンバーガーボタン メニュー開いた時********************/
+
+  /******************* ハンバーガーメニュー開いた時のエリア********************/
+  /* #header h1{
+    display: none;
+  } */
+
+  .nav-wrapper{
+    /* display: none; */
+    /* width: 100vw;      
+    height: 100vh;      
+    position: fixed;      
+    top: 0;      
+    left: 0;       
+    z-index: 2;   */
+  }
+  
+  .header-nav{
+    display: block;
+    position: absolute;
+    top: 0;
+    left:0;
+    /* position:fixed;
+    top: 0;
+    left: 0; */
+    height: 100%;
+    width: 100%;
+    background-color:rgba(0, 0, 0, .8);
+    z-index:3;
+  }
+
+  .header-nav ul{
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+  }
+
+  #header ul li{
+    padding: 0;
+    margin-bottom: 40px;
+  }
+
+  #header ul a{
+    text-align: left;
+  }
+
+  #header ul li span{
+    display: inline-block;
+  }
+
+  body.noscroll{
+    overflow: hidden;
+  }
+  /******************* ハンバーガーメニュー開いた時のエリア********************/
+
+  /******************* About ********************/
+  #about{
+    padding-top: 0;
+  }
+
+  #about .flexitem{
+    flex-direction: column;
+  }
+
+  .photoarea img{
+    width: 80%;
+  }
+
+  .photoarea p{
+    width: 80%;
+  }
+  /******************* About********************/
+
+  /******************* cruise ********************/
+  #cruise .flexitem{
+    flex-direction: column;
+  }
+
+  .photoarea p{
+    margin-right: 0;
+    margin-left: 0;
+  }
+  /******************* cruise ********************/
+
+  /******************* Access ********************/
+  .access-kitagi > .flexitem{
+    flex-direction: column;
+  }
+
+  #access .item{
+    width: 100%;
+  }
+  /******************* Access ********************/
+
+  /******************* manners ********************/
+  #manners li{
+    width: 20%;
+    padding:10px 5px;
+    margin: 5px;
+  }
+  /******************* manners ********************/
+}
+/******************* SP ********************/
